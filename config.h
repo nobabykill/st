@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "SauceCodePro Nerd Font Mono:style=Medium:pixelsize=14:antialias=true:autohint=true";
+static char *font = "DejaVuSansMono Nerd Font Mono:style=Medium:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 0;
 
 /*
@@ -95,29 +95,29 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* Normal colors */
-	[0]   = "#282c34",
-	[1]   = "#be5046",
-	[2]   = "#98c379",
-	[3]   = "#d19a66",
-	[4]   = "#61afef",
-	[5]   = "#c678dd",
-	[6]   = "#56b6c2",
-	[7]   = "#828997",
+  /* 8 normal colors */
+  [0] = "#000000", /* black   */
+  [1] = "#ff5555", /* red     */
+  [2] = "#50fa7b", /* green   */
+  [3] = "#f1fa8c", /* yellow  */
+  [4] = "#bd93f9", /* blue    */
+  [5] = "#ff79c6", /* magenta */
+  [6] = "#8be9fd", /* cyan    */
+  [7] = "#bbbbbb", /* white   */
 
-    /* Bright colors */
-	[8]   = "#5c6370",
-	[9]   = "#e06c75",
-	[10]  = "#98c379",
-	[11]  = "#e5c07b",
-	[12]  = "#61afef",
-	[13]  = "#c678dd",
-	[14]  = "#56b6c2",
-	[15]  = "#abb2bf",
+  /* 8 bright colors */
+  [8]  = "#44475a", /* black   */
+  [9]  = "#ff5555", /* red     */
+  [10] = "#50fa7b", /* green   */
+  [11] = "#f1fa8c", /* yellow  */
+  [12] = "#bd93f9", /* blue    */
+  [13] = "#ff79c6", /* magenta */
+  [14] = "#8be9fd", /* cyan    */
+  [15] = "#ffffff", /* white   */
 
-    /* Foreground and background */
-	[256] = "#abb2bf",
-	[257] = "#282c34",
+  /* special colors */
+  [256] = "#f8f8f2", /* foreground */
+  [257] = "#282a36", /* background */
 };
 
 
